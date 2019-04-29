@@ -1,0 +1,11 @@
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    amend = commit --amend
+[core]
+    excludesFile = /Users/matthewdiamant/.gitignore_global
+[user]
+	name = Matthew Diamant
+	email = matthewdiamant@gmail.com
