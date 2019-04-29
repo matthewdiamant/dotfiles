@@ -9,7 +9,7 @@ eval $(docker-machine env $(99dev machine-name))
 
 # Bash completion
 . /usr/local/etc/bash_completion
-source ~/git-completion.bash
+. ~/git-completion.bash
 
 # Misc aliases
 alias chrome='open -a "Google Chrome"'
@@ -26,4 +26,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # rvm
-source ~/.rvm/scripts/rvm
+. ~/.rvm/scripts/rvm
