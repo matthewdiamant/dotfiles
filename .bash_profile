@@ -2,7 +2,7 @@
 export PS1="\[$(tput bold)\]\[\033[38;5;10m\]\W \\$\[$(tput sgr0)\] "
 
 # dotfiles
-alias dotfiles='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # 99dev docker
 eval $(docker-machine env $(99dev machine-name))
