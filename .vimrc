@@ -80,7 +80,7 @@ let g:omni_sql_no_default_maps = 1
 " Diffs are shown side-by-side not above/below
 set diffopt=vertical
 " Always show the sign column
-set signcolumn=no
+set signcolumn=yes
 " True color mode! (Requires a fancy modern terminal, but iTerm works.)
 :set termguicolors
 " Write swap files to disk and trigger CursorHold event faster (default is
@@ -154,3 +154,14 @@ endif
 
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Trim whitespace on save
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd BufWritePre * :%s/\s\+$//e
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Ale
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Fix on save
+let g:ale_fix_on_save = 1
