@@ -1,0 +1,9 @@
+# Search through history with up and down buttons
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# Single TAB to autocomplete instead of double
+set show-all-if-ambiguous on
+
+# Ignore case for completion
+set completion-ignore-case on
